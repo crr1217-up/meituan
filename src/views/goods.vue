@@ -50,7 +50,5 @@ export default {
   color: #222;
   font-size: 12px;
 }
-.recommendPro{
-  right:115px;
-}
+
 </style>
