@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const axios = this.axios;
-axios.defaults.baseURL = "http://api.duyiedu.com";
+axios.defaults.baseURL = "https://open.duyiedu.com";
 axios.interceptors.request.use((config) => { 
     config.params = {
 			...config.params,
