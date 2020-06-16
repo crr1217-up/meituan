@@ -137,6 +137,7 @@ export default {
         position: absolute;
         top: -11px;
         left: 18px;
+        z-index:5;
       }
       &::before {
         content: "";
@@ -147,7 +148,7 @@ export default {
         position: absolute;
         top: -10px;
         left: 18px;
-        z-index: 3;
+        z-index: 6;
       }
       dt {
         color: #ccc;

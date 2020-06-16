@@ -192,7 +192,7 @@ export default {
                     if(toLogin){
                         this.$router.push({name:"login"});
                     }else{
-                        this.$router.push("/");
+                        this.$router.push({name:'default'});
                     }
                 }
             })

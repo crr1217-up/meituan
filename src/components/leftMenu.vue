@@ -140,6 +140,8 @@ export default {
           margin-left: 141px;
           margin-right: 0;
           color: #646464;
+          margin-top: 7px;
+          position: absolute;
         }
       }
     }

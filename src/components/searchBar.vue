@@ -137,103 +137,109 @@ export default {
 </script>
 
 <style lang="less">
-.search {
-  height: calc(197px - 40px);
-  background-color: #fff;
-  box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.1);
-  .logo {
-    padding-top: 28px;
-    padding-right: 60px;
-    padding-bottom: 40px;
-    font-size: 16px;
-    min-width: 220px;
-    height: 54px;
-    box-sizing: content-box;
-    vertical-align: sub;
-    img {
-      width: 126px;
-      height: 46px;
-      border: 0;
-    }
-  }
-  .searchInp {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 28px;
-    width: 550px;
-    height: 40px;
-    background: #fff;
-    input {
-      outline: none;
-      border: 1px solid #e5e5e5;
-      border-right: none;
-      border-radius: 4px 0 0 4px;
-      line-height: 100%;
-      box-sizing: border-box;
-      display: inline-block !important;
-      padding: 15px;
-      font-size: 14px;
-      height: 100%;
-      background: transparent;
-      width: 85.45%;
-      &::placeholder {
-        color: #ccc;
-      }
-    }
-    .button {
-      outline: none;
-      width: 14.55%;
-      box-sizing: border-box;
-      line-height: 100%;
-      height: 100%;
-      background: #ffc300;
-      border: none;
-      position: absolute;
-      right: 0;
-      top: 0;
-      // float: right;
-      color: #222222;
-      cursor: pointer;
-      font-size: 18px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px;
-    }
-  }
-  .hotSearh,
-  .suggestSearh {
-    position: absolute;
-    width: 447px;
-    top: 41px;
-    left: 0;
-    font-size: 12px;
-    z-index: 100000;
-    padding: 10px;
+
+  .search {
+    height: calc(197px - 40px);
     background-color: #fff;
-    border: 1px solid #e5e5e5;
-    dt {
-      color: #999;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    dd {
-      line-height: 1.6;
-      &.hotDD {
-        display: inline-block;
-        margin-right: 10px;
-      }
-      a {
-        color: #666;
-        &:hover {
-          color: #fe8c00;
+    box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.1);
+    .el-row {
+      position: relative;
+      z-index: 10;
+      .logo {
+        padding-top: 28px;
+        padding-right: 60px;
+        padding-bottom: 40px;
+        font-size: 16px;
+        min-width: 220px;
+        height: 54px;
+        box-sizing: content-box;
+        vertical-align: sub;
+        img {
+          width: 126px;
+          height: 46px;
+          border: 0;
         }
       }
+      .searchInp {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 28px;
+        width: 550px;
+        height: 40px;
+        background: #fff;
+        input {
+          outline: none;
+          border: 1px solid #e5e5e5;
+          border-right: none;
+          border-radius: 4px 0 0 4px;
+          line-height: 100%;
+          box-sizing: border-box;
+          display: inline-block !important;
+          padding: 15px;
+          font-size: 14px;
+          height: 100%;
+          background: transparent;
+          width: 85.45%;
+          &::placeholder {
+            color: #ccc;
+          }
+        }
+        .button {
+          outline: none;
+          width: 14.55%;
+          box-sizing: border-box;
+          line-height: 100%;
+          height: 100%;
+          background: #ffc300;
+          border: none;
+          position: absolute;
+          right: 0;
+          top: 0;
+          // float: right;
+          color: #222222;
+          cursor: pointer;
+          font-size: 18px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 4px;
+          border-top-right-radius: 4px;
+        }
+      }
+      .hotSearh,
+      .suggestSearh {
+        position: absolute;
+        width: 447px;
+        top: 41px;
+        left: 0;
+        font-size: 12px;
+        z-index: 100000;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        dt {
+          color: #999;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        dd {
+          line-height: 1.6;
+          &.hotDD {
+            display: inline-block;
+            margin-right: 10px;
+          }
+          a {
+            color: #666;
+            &:hover {
+              color: #fe8c00;
+            }
+          }
+        }
+      }
+      .suggestSearh {
+        position: absolute;
+      }
     }
   }
-  .suggestSearh {
-    position: absolute;
-  }
-}
+
 </style>

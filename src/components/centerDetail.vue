@@ -16,7 +16,7 @@
                 </div>
                 <p>hi~你好!</p>
                 <template v-if="!userName">
-                    <router-link :to="{name:'registor'}"><button>注册</button></router-link>
+                    <router-link :to="{name:'register'}"><button>注册</button></router-link>
                     <router-link :to="{name:'login'}"><button>立即登录</button></router-link>
                 </template>
                 <template v-else>

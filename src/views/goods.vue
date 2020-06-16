@@ -43,11 +43,14 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .crumb {
   padding-top: 10px;
   margin: 10px 0;
   color: #222;
   font-size: 12px;
+}
+.recommendPro{
+  right:115px;
 }
 </style>

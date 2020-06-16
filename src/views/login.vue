@@ -107,7 +107,7 @@ export default {
             this.$store.commit("changeLogStatus", true);
             document.cookie = `isLogin=true;`;
             const isBack = window.confirm("是否回到原来的页面？");
-            isBack ? this.$router.go(-1) : this.$router.push("/");
+            isBack ? this.$router.go(-1) : this.$router.push({name:"default"});
             this.$store.commit("changeName", res.data.data);
           }
         });
