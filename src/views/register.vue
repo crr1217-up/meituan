@@ -2,7 +2,7 @@
 <div class="register">
     <div class="head">
         <div>
-            <div class="logo">美团</div>
+            <div class="logo"><router-link :to="{name:'default'}">美团</router-link></div>
             <span class="des">
                 <span class="question">已有美团账号？</span>
                 <router-link :to="{name:'login'}" class="login">登录</router-link>
